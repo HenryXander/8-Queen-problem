@@ -4,7 +4,7 @@ import pygame
 import sys
 
 from Local_search_problem import local_search_problem
-import CSP
+from CSP import CSP
 from Local_search_agent import agent
 
 # Define some colors
@@ -138,7 +138,7 @@ if __name__ == '__main__':
     font = pygame.font.Font(None, FONT_SIZE)
     clock = pygame.time.Clock()
     # Load the queen image and scale it to fit the squares
-    queen_image = pygame.image.load("../../queen.jpg")
+    queen_image = pygame.image.load("queen.jpg")
     queen_image = pygame.transform.scale(queen_image, (SQUARE_SIZE, SQUARE_SIZE))
 
     initial_state = initialize_initial_state()
