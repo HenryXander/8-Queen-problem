@@ -68,7 +68,7 @@ def heuristic(node):
 def schedule(time):
     start_temp = 100
     factor = 0.99 ** (time - 1)
-    if factor <= 0.001:
+    if factor <= 0.0001:
         return 0
     else:
         temp = start_temp * factor
